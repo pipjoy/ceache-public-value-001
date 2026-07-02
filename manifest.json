@@ -1,0 +1,26 @@
+{
+  "name": "ceache-public-value-001",
+  "version": "0.1.0",
+  "date": "2026-07-02",
+  "author": "Johaina Chavez",
+  "agency": "Ceache Lab",
+  "status": "public_value_package",
+  "principle": "Interoperar funciones, no personas",
+  "contents": {
+    "docs": 7,
+    "schemas": 7,
+    "atlas_files": 1,
+    "download_zip": 1
+  },
+  "not_included": [
+    "personal names",
+    "identity documents",
+    "private phones",
+    "exact sensitive addresses",
+    "individual health data",
+    "nominal shelter lists",
+    "missing persons records",
+    "private chats"
+  ]
+}
+

@@ -1,0 +1,16 @@
+field,type,required,description,example,pii_risk,public_allowed
+necesidad_id,string,true,Identificador estable de la necesidad agregada,necesidad-20260702-001,low,true
+categoria,string,true,Categoria principal de necesidad,agua,low,true
+subcategoria,string,false,Subcategoria normalizada,agua_potable,low,true
+urgencia,string,true,Nivel de urgencia reportado o inferido,alta,low,true
+estado,string,true,Estado de atencion de la necesidad,reportada,low,true
+zona_agregada,string,true,Zona donde ocurre la necesidad sin ubicacion exacta,Maracay norte,low,true
+cantidad_estimada,number,false,Cantidad agregada estimada,500,low,true
+unidad,string,false,Unidad de la cantidad estimada,personas,low,true
+fecha_reporte,datetime,true,Fecha y hora del reporte inicial,2026-07-02T10:30:00Z,low,true
+fecha_actualizacion,datetime,true,Fecha y hora de ultima actualizacion,2026-07-02T15:00:00Z,low,true
+fuente,string,true,Nombre de la fuente trazable,Reporte comunitario agregado,low,true
+metodo,string,false,Metodo de obtencion del dato,formulario_agregado,low,true
+nivel_confianza,number,false,Puntaje o nivel de confianza entre 0 y 1,0.65,low,true
+limitaciones,string,false,Limitaciones sesgos o incertidumbre del registro,no verificado en campo,low,true
+pii_risk,string,true,Riesgo PII del registro completo,low,low,true

@@ -1,0 +1,16 @@
+field,type,required,description,example,pii_risk,public_allowed
+donacion_id,string,true,Identificador estable de la donacion o lote,donacion-20260702-001,low,true
+categoria,string,true,Categoria principal del bien servicio o capacidad,alimentos,low,true
+subcategoria,string,false,Subcategoria normalizada,alimentos_no_perecederos,low,true
+cantidad,number,false,Cantidad agregada disponible o registrada,120,low,true
+unidad,string,false,Unidad de medida,cajas,low,true
+estado,string,true,Estado de la donacion,ofrecida,low,true
+ubicacion_origen_agregada,string,false,Zona de origen sin direccion exacta,Caracas,low,true
+ubicacion_destino_agregada,string,false,Zona de destino sin direccion exacta,Valencia,low,true
+fecha_disponible,date,false,Fecha desde la cual la donacion esta disponible,2026-07-03,low,true
+fecha_actualizacion,datetime,true,Fecha y hora de actualizacion del registro,2026-07-02T12:00:00Z,low,true
+restricciones,string,false,Restricciones operativas agregadas,requiere_transporte_refrigerado,low,true
+organizacion_o_fuente,string,true,Organizacion fuente o actor institucional visible,Red Comunitaria X,low,true
+url_fuente,string,false,URL o referencia trazable,https://example.org/donaciones/001,low,true
+nivel_confianza,number,false,Puntaje o nivel de confianza entre 0 y 1,0.75,low,true
+limitaciones,string,false,Limitaciones conocidas del registro,cantidad_estimada,low,true

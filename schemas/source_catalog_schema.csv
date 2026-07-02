@@ -1,0 +1,19 @@
+field,type,required,description,example,pii_risk,public_allowed
+source_id,string,true,Identificador estable de la fuente,source-acopiove-001,low,true
+source_name,string,true,Nombre publico de la fuente,AcopioVE,low,true
+source_type,string,true,Tipo de fuente,google_sheet,low,true
+function_covered,string,true,Funcion interoperable cubierta,acopios,low,true
+owner_type,string,false,Tipo de actor responsable,organizacion_comunitaria,low,true
+geographic_scope,string,false,Cobertura geografica agregada,nacional,low,true
+access_method,string,true,Metodo de acceso,csv_export,low,true
+source_url,string,false,URL publica o referencia de acceso,https://example.org/sheet,low,true
+license,string,false,Licencia o permiso declarado,CC-BY-4.0,low,true
+sharing_permission,string,true,Permiso declarado para uso y atribucion,publico_con_atribucion,low,true
+update_frequency,string,false,Frecuencia esperada de actualizacion,diaria,low,true
+last_checked_at,datetime,false,Fecha y hora de ultima revision,2026-07-02T16:00:00Z,low,true
+schema_mapping_status,string,true,Estado del mapeo al esquema minimo,pendiente,low,true
+has_pii_flag,boolean,true,Indica si la fuente declara contener PII,false,medium,conditional
+pii_review_status,string,true,Estado de revision de riesgo PII,no_pii_detectada,medium,conditional
+institutional_contact_channel,string,false,Canal institucional publico para seguimiento,datos@example.org,medium,conditional
+attribution,string,false,Atribucion requerida por la fuente,Datos provistos por AcopioVE,low,true
+notes,string,false,Notas operativas no sensibles,requiere validacion semanal,low,true

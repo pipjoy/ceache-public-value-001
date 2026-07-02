@@ -1,0 +1,14 @@
+field,type,required,description,example,pii_risk,public_allowed
+delivery_id,string,true,Identificador estable de entrega o movimiento,delivery-20260702-001,low,true
+categoria,string,true,Categoria principal de la ayuda,agua,low,true
+cantidad,number,false,Cantidad agregada transportada o transferida,80,low,true
+unidad,string,false,Unidad de medida,cajas,low,true
+origen_agregado,string,true,Zona o punto de origen agregado,Centro de acopio Caracas,low,true
+destino_agregado,string,true,Zona o destino agregado sin direccion sensible,Valencia norte,low,true
+etapa,string,true,Etapa logistica actual,despachada,low,true
+fecha_etapa,datetime,true,Fecha y hora de la etapa reportada,2026-07-02T18:00:00Z,low,true
+actor_responsable,string,false,Actor institucional responsable de la etapa,Red Logistica X,low,true
+fuente,string,true,Nombre de la fuente trazable,Hoja logistica agregada,low,true
+evidencia,string,false,Referencia no personal a evidencia trazable,guia_interna_anonimizada,medium,conditional
+nivel_confianza,number,false,Puntaje o nivel de confianza entre 0 y 1,0.78,low,true
+limitaciones,string,false,Limitaciones conocidas del registro,ruta_no_publicable,low,true

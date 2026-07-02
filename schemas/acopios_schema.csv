@@ -1,0 +1,21 @@
+field,type,required,description,example,pii_risk,public_allowed
+acopio_id,string,true,Identificador estable del acopio,acopio-caracas-001,low,true
+nombre_publico,string,true,Nombre publico o institucional del punto,Centro de Acopio Plaza Bolivar,low,true
+tipo,string,true,Tipo de acopio o red,centro_fisico,low,true
+pais,string,true,Pais del punto,Venezuela,low,true
+estado,string,false,Estado o region administrativa,Distrito Capital,low,true
+municipio,string,false,Municipio o equivalente,Libertador,low,true
+ciudad,string,false,Ciudad o localidad agregada,Caracas,low,true
+zona_agregada,string,true,Zona segura para interoperar sin direccion exacta,Caracas oeste,low,true
+lat_lng_aproximado,string,false,Coordenada aproximada o celda geografica no sensible,10.50|-66.91,medium,conditional
+estado_operativo,string,true,Estado operativo del acopio,abierto,low,true
+categorias_recibe,string,false,Categorias que recibe separadas por pipe,agua|alimentos|higiene,low,true
+categorias_necesita,string,false,Categorias solicitadas separadas por pipe,agua|medicamentos,low,true
+horario,string,false,Horario publico de atencion,Lun-Sab 09:00-16:00,low,true
+contacto_institucional_publico,string,false,Canal publico institucional o enmascarado para coordinar,formulario_publico,medium,conditional
+fuente,string,true,Nombre de la fuente trazable,AcopioVE,low,true
+url_fuente,string,true,URL o referencia verificable de la fuente,https://example.org/acopios,low,true
+ultima_actualizacion,datetime,true,Fecha y hora de ultima actualizacion,2026-07-02T02:00:00Z,low,true
+licencia,string,false,Licencia o permiso de uso del dato,CC-BY-4.0,low,true
+nivel_confianza,number,false,Puntaje o nivel de confianza entre 0 y 1,0.85,low,true
+restricciones_publicacion,string,false,Notas de seguridad sobre que no debe publicarse,no publicar inventario detallado,medium,conditional

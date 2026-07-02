@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Ceache Public Value Package 001: Datos seguros para entender la respuesta"
+message: "If you use this work, please cite it as below."
+type: dataset
+authors:
+  - family-names: Chavez
+    given-names: Johaina
+date-released: "2026-07-02"
+version: "0.1.0"
+institution: "Ceache Lab"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/pipjoy/ceache-public-value-001"
+abstract: "Public value package with documents, schemas and matrices for safe data interoperability in crisis response analysis."
+

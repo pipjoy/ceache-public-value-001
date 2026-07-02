@@ -1,0 +1,12 @@
+field,type,required,description,example,pii_risk,public_allowed
+volunteer_pool_id,string,true,Identificador estable del grupo agregado de voluntariado,volpool-caracas-001,low,true
+tipo_habilidad,string,true,Habilidad o funcion disponible,logistica,low,true
+cantidad_disponible,integer,true,Cantidad agregada de personas disponibles,12,low,true
+zona_agregada,string,true,Zona de disponibilidad sin ubicaciones personales,Caracas este,low,true
+disponibilidad,string,false,Ventana agregada de disponibilidad,mananas,low,true
+organizacion_coordinadora,string,true,Organizacion o red que coordina el grupo,Cruz Roja local,low,true
+estado,string,true,Estado del pool de voluntariado,disponible,low,true
+fecha_actualizacion,datetime,true,Fecha y hora de ultima actualizacion,2026-07-02T09:00:00Z,low,true
+fuente,string,true,Nombre de la fuente trazable,Registro institucional agregado,low,true
+nivel_confianza,number,false,Puntaje o nivel de confianza entre 0 y 1,0.7,low,true
+restricciones_publicacion,string,false,Reglas para evitar exposicion individual,no publicar turnos individuales,medium,conditional

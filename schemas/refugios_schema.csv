@@ -1,0 +1,15 @@
+field,type,required,description,example,pii_risk,public_allowed
+refugio_id,string,true,Identificador estable del refugio,refugio-caracas-001,low,true
+nombre_publico_o_codigo,string,true,Nombre publico o codigo no identificante,Refugio Municipal A,low,true
+tipo,string,true,Tipo de refugio,formal,low,true
+zona_agregada,string,true,Zona segura para publicar sin direccion exacta,Caracas centro,low,true
+estado_operativo,string,true,Estado operativo del refugio,abierto,low,true
+capacidad_total,integer,false,Capacidad total agregada,250,low,true
+ocupacion_estimada,integer,false,Ocupacion estimada agregada,180,low,true
+servicios_disponibles,string,false,Servicios disponibles separados por pipe,agua|banos|cocina,low,true
+necesidades_actuales,string,false,Necesidades actuales agregadas separadas por pipe,higiene|colchones,low,true
+acepta_voluntarios,boolean,false,Indica si acepta voluntariado coordinado,true,low,true
+fecha_actualizacion,datetime,true,Fecha y hora de ultima actualizacion,2026-07-02T14:00:00Z,low,true
+fuente,string,true,Nombre de la fuente trazable,Defensa Civil local,low,true
+nivel_confianza,number,false,Puntaje o nivel de confianza entre 0 y 1,0.8,low,true
+restricciones_publicacion,string,false,Reglas de seguridad para publicar,no publicar direccion exacta,medium,conditional
