@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.1.3 - 2026-07-02
+
+Reordena el paquete alrededor del mapa del ecosistema digital.
+
+Corrige el punto de partida metodologico: antes de afirmar que una funcion falta, se revisa si otra app, grupo, Excel, API o repositorio ya la resolvio parcial o totalmente.
+
+Incluye:
+
+- Documento `docs/001-mapa-del-ecosistema-digital.md`.
+- Tabla publica `atlas/ecosystem_function_public_table_2026-07-02.csv`.
+- Resumen de cobertura `atlas/ecosystem_function_coverage_2026-07-02.csv`.
+- README reescrito para abrir por funciones, riesgos y capa comun.
+
+La lectura principal deja de ser "que app falta crear" y pasa a ser "que funciones ya existen, bajo que limites, y que falta conectar".
+
 ## v0.1.2 - 2026-07-02
 
 Agrega la capa comun de coordinacion para conectar la realidad ya observada: grupos de WhatsApp, mesas de datos, repositorios tecnicos, hojas, apps, APIs y fuentes operativas.

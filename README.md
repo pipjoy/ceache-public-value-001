@@ -1,58 +1,54 @@
 # Ceache Public Value Package 001
 
-**Datos seguros para entender la respuesta**  
+**Mapa del ecosistema digital de ayuda**  
 Johaina Chavez, Data Scientist  
 Ceache Lab  
 Fecha: 2026-07-02
 
-Este repositorio publica la primera entrega abierta de Ceache Lab sobre datos, ayuda e interoperabilidad durante la crisis venezolana de 2026.
+Este repositorio publica una entrega abierta basada en evidencia local organizada.
 
-La idea central es simple:
+La idea central es:
 
-> Hay una huella publica de ayuda, necesidades y sistemas digitales, pero la evidencia disponible todavia no permite afirmar cobertura real ni coordinacion efectiva.
+> Muchas herramientas ya existen. El problema ahora es que puedan entenderse sin exponer informacion sensible.
+
+No es un ranking de apps. No es una base central de personas. No reemplaza proyectos existentes.
+
+Es un paquete para ordenar funciones, datos minimos, riesgos y posibilidades de interoperabilidad.
 
 ## Para cualquier persona
 
-Ceache reviso registros publicos, listas, apps, hojas de calculo, APIs, mapas y sistemas que aparecieron durante la respuesta a la crisis.
+Durante una emergencia aparecen aplicaciones, formularios, mapas, hojas de calculo, bots, directorios, repositorios y grupos de WhatsApp.
 
-Encontramos evidencia visible de:
+Eso puede parecer desorden. Pero tambien muestra algo importante: muchas personas estan intentando resolver partes distintas de un mismo sistema.
 
-- 796 puntos operativos publicos.
-- 2.570 pedidos registrados en una fuente revisada.
-- 1.000 zonas reportadas.
-- 168 fuentes, apps, listas o sistemas clasificados.
+Este paquete ayuda a responder:
 
-Eso no significa que toda la ayuda haya llegado, ni que todo este coordinado. Significa que ya existe informacion suficiente para hacer mejores preguntas:
-
-- Que punto sigue activo?
-- Que pedido fue verificado?
-- Que ayuda esta en camino?
-- Que ayuda fue recibida?
-- Que acopio esta saturado?
-- Que dato no deberia circular?
+- Que funciones ya estan cubiertas?
+- Que datos se pueden comparar?
+- Que datos no se deben compartir?
+- Que herramientas podrian conectarse?
+- Donde hay duplicacion util?
+- Donde hay riesgo de exponer personas?
 
 ## Para equipos tecnicos
 
 Este repositorio contiene:
 
-- documentos publicables de analisis;
-- matriz minima de datos compartibles;
-- contrato de schemas;
-- schemas CSV para acopios, donaciones, necesidades, refugios, voluntarios, entregas y catalogo de fuentes;
-- matriz plataforma-funcion del Atlas 001;
-- propuesta de intake seguro para CSV, Excel, Google Sheet, formulario o API.
-- kit de intake para recibir contexto desde acopios, voluntarios, transportistas, organizaciones y equipos tecnicos.
-- guia rapida para compartir datos seguros;
-- checklist de calidad de datos;
-- plantilla tipo Google Sheet/CSV;
-- contrato API minimo para interoperabilidad segura.
-- capa comun de coordinacion para conectar grupos, apps, hojas, APIs y repositorios sin centralizar personas.
-
-Las plataformas nombradas en `atlas/platform_function_matrix.csv` aparecen como fuentes observadas del ecosistema digital. Su inclusion no implica afiliacion, recomendacion, validacion de impacto ni aprobacion por parte de Ceache Lab.
+- una lectura publica del ecosistema digital;
+- una tabla descargable por funcion y fuente;
+- una matriz de cobertura funcional;
+- una matriz plataforma-funcion;
+- schemas CSV para datos operativos seguros;
+- una capa comun de coordinacion;
+- una guia de datos minimos;
+- un kit de intake para recibir contexto sin publicar datos sensibles automaticamente;
+- reglas de seguridad, licencia y atribucion.
 
 La regla metodologica central es:
 
-> Interoperar funciones, no personas.
+```text
+Interoperar funciones, no personas.
+```
 
 La llave recomendada para comparar sistemas es:
 
@@ -66,21 +62,37 @@ La llave prohibida es:
 nombre + cedula + telefono + direccion exacta
 ```
 
-## Estructura del repositorio
+## Evidencia base
+
+Esta version parte de evidencia local ya organizada:
+
+- 168 fuentes, proyectos o plataformas en `atlas/platform_function_matrix.csv`.
+- 584 relaciones funcion-fuente en `atlas/ecosystem_function_public_table_2026-07-02.csv`.
+- 43 repositorios analizados desde inventario tecnico local.
+- 23 grupos o canales funcionales de coordinacion inventariados.
+- tablas operativas existentes para Mi Acopio / Acopio App.
+- un pipeline tecnico externo para deduplicacion y proteccion PII en VZLA_DEDUP.
+- un sistema longitudinal de observacion diaria.
+
+## Entregables principales
 
 ```text
 docs/
-  paquete-valor-publico-001.md
-  insight-001-infraestructura-visible-ayuda.md
-  atlas-001-ecosistema-digital.md
+  001-mapa-del-ecosistema-digital.md
+  common-coordination-layer-v0.1.md
   minimum-data-matrix.md
+  quick-start-compartir-datos.md
   schema-contract-v0.1.0.md
   data-intake-tool-v0.md
-  declaracion-convocatoria-datos-seguros.md
-  quick-start-compartir-datos.md
-  common-coordination-layer-v0.1.md
+
+atlas/
+  ecosystem_function_public_table_2026-07-02.csv
+  ecosystem_function_coverage_2026-07-02.csv
+  platform_function_matrix.csv
 
 schemas/
+  common_coordination_item_schema.csv
+  common_operational_signal_schema.csv
   acopios_schema.csv
   donaciones_schema.csv
   necesidades_schema.csv
@@ -88,16 +100,9 @@ schemas/
   voluntarios_schema.csv
   entregas_schema.csv
   source_catalog_schema.csv
-  common_coordination_item_schema.csv
-  common_operational_signal_schema.csv
-
-atlas/
-  platform_function_matrix.csv
-
-downloads/
-  ceache-paquete-valor-001.zip
 
 intake-kit/
+  README.md
   questions-by-actor.md
   intake_schema.csv
   field_mapping_template.csv
@@ -110,75 +115,63 @@ intake-kit/
 
 ## Como usarlo
 
-Si eres una organizacion, comunidad o equipo tecnico:
+Si quieres entender el resultado:
 
-1. Lee `docs/minimum-data-matrix.md`.
-2. Revisa el schema CSV que corresponde a tu tipo de dato.
-3. Lee `docs/quick-start-compartir-datos.md`.
-4. Lee `docs/common-coordination-layer-v0.1.md` si necesitas conectar grupos, apps, hojas, APIs o repositorios.
-5. Usa `intake-kit/data-quality-checklist.md` antes de compartir.
-6. Copia `intake-kit/google_sheet_template.csv` como base de tu hoja.
-7. No compartas datos personales ni ubicaciones sensibles.
-8. Compara tus campos con los schemas.
-9. Contacta a Ceache Lab si quieres mapear una hoja, app, formulario o API a un formato seguro.
+1. Lee `docs/001-mapa-del-ecosistema-digital.md`.
+2. Abre `atlas/ecosystem_function_coverage_2026-07-02.csv`.
+3. Revisa `atlas/ecosystem_function_public_table_2026-07-02.csv`.
 
-## Siguiente valor: intake de contexto
+Si tienes una app, Excel, formulario o API:
 
-El directorio `intake-kit/` convierte la metodologia en una herramienta practica.
+1. Busca si tu funcion aparece en la tabla publica.
+2. Revisa `docs/minimum-data-matrix.md`.
+3. Compara tus campos con `schemas/`.
+4. Lee `DATA_SAFETY.md`.
+5. Usa `intake-kit/field_mapping_template.csv` para mapear tu estructura.
+6. No envies datos personales, ubicaciones sensibles ni casos nominales.
 
-Permite recibir:
+## Que datos si se pueden compartir
 
-- relatos desde el terreno;
-- datos operativos minimos;
-- disponibilidad de transporte;
-- necesidades por zona agregada;
-- ofertas de donacion;
-- fuentes tecnicas como hojas, apps o APIs.
-- plantillas copiables para iniciar una hoja segura;
-- contratos minimos para conectar sistemas.
+- tipo de necesidad;
+- categoria de recurso;
+- zona agregada;
+- estado operativo;
+- fecha de actualizacion;
+- fuente;
+- canal institucional;
+- nivel de verificacion;
+- permiso o licencia;
+- responsable institucional o tecnico.
 
-El objetivo no es capturar todo. Es recibir senales seguras que puedan transformarse en evidencia revisable.
+## Que datos no se deben enviar ni publicar
 
-## Que no contiene
+Este repositorio no contiene y no solicita:
 
-Este repositorio no contiene:
-
-- nombres de personas afectadas;
+- nombres de personas vulnerables;
 - cedulas o documentos;
 - telefonos privados;
 - direcciones exactas;
+- ubicaciones sensibles;
+- datos de menores;
 - salud individual;
 - listas nominales de refugios;
-- personas desaparecidas;
-- chats privados;
-- fotos identificables.
+- reportes nominales de desaparecidos;
+- fotos identificables;
+- chats privados.
 
 ## Que trabajo hicimos
 
-1. Consolidamos evidencia publica disponible.
-2. Clasificamos fuentes, apps, hojas, APIs y sistemas por funcion observable.
-3. Separamos lo que se puede saber de lo que todavia no se puede afirmar.
-4. Definimos una matriz minima de datos compartibles.
-5. Creamos schemas CSV para que equipos tecnicos puedan comparar sus datos.
-6. Documentamos riesgos PII y reglas de publicacion segura.
-7. Preparamos una propuesta de intake para recibir datos sin publicar informacion sensible automaticamente.
-
-## Entregables descargables
-
-- Paquete completo: `downloads/ceache-paquete-valor-001.zip`
-- Documentos: `docs/`
-- Schemas tecnicos: `schemas/`
-- Matriz plataforma-funcion: `atlas/platform_function_matrix.csv`
-- Kit de intake: `intake-kit/`
-- Guia rapida: `docs/quick-start-compartir-datos.md`
-- Capa comun de coordinacion: `docs/common-coordination-layer-v0.1.md`
-- Checklist de calidad: `intake-kit/data-quality-checklist.md`
-- Plantilla tipo Google Sheet: `intake-kit/google_sheet_template.csv`
-- API contract minimo: `intake-kit/API_CONTRACT_MINIMO.md`
+1. Reordenamos la evidencia desde funciones, no desde marcas.
+2. Separamos herramientas existentes de vacios reales.
+3. Creamos una tabla funcion-fuente descargable.
+4. Marcamos riesgos PII por funcion.
+5. Identificamos candidatas a interoperar.
+6. Definimos schemas y datos minimos para intercambio seguro.
+7. Documentamos limites: lo que sabemos, lo que creemos y lo que todavia no sabemos.
 
 ## Estado
 
-Version: `v0.1.0`  
+Version: `v0.1.3`  
 Estado: public value package, evidencia preliminar  
 Licencia: ver `LICENSE.md`  
 Contacto: ceachelab@gmail.com

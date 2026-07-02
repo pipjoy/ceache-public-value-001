@@ -540,36 +540,23 @@ La version publica normalizada solo debe generarse si:
 
 ## Donde implementarlo si se decide construir
 
-El repo principal es mayormente documental y de scripts Python. La app frontend adecuada es:
+La herramienta puede vivir en cualquier app web que ya tenga:
+
+- formularios;
+- autenticacion si se reciben fuentes privadas;
+- almacenamiento seguro;
+- validacion de schemas;
+- revision humana antes de publicar.
+
+Una implementacion minima deberia separar tres capas:
 
 ```text
-external/build4venezuela
+formulario de fuente
+-> revision y mapeo de columnas
+-> dataset publico candidato solo si pasa controles
 ```
 
-Es una app Next.js con App Router, Supabase, Clerk, Zod, componentes UI y rutas de formulario ya existentes para proyectos y solicitudes. La ruta candidata seria:
-
-```text
-external/build4venezuela/src/app/[locale]/(project-routes)/data-intake
-```
-
-APIs candidatas:
-
-```text
-external/build4venezuela/src/app/api/data-intake/sources/route.ts
-external/build4venezuela/src/app/api/data-intake/submissions/route.ts
-external/build4venezuela/src/app/api/data-intake/submissions/[intakeId]/route.ts
-```
-
-Librerias o carpetas candidatas:
-
-```text
-external/build4venezuela/src/lib/data-intake/schema.ts
-external/build4venezuela/src/lib/data-intake/store.ts
-external/build4venezuela/src/lib/data-intake/validation.ts
-external/build4venezuela/src/lib/data-intake/pii.ts
-```
-
-La implementacion deberia reutilizar Zod para validar formularios, Supabase para persistencia, Clerk si se exige autenticacion, y el patron existente de `src/lib/requests` o `src/lib/projects` para stores, queries y rutas API.
+La implementacion tecnica deberia reutilizar validacion estructurada, persistencia segura, control de permisos y rutas API documentadas.
 
 No se recomienda construir todavia hasta revisar:
 

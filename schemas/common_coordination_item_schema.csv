@@ -1,7 +1,7 @@
 field,type,required,description,example,pii_risk,public_allowed
 coordination_item_id,string,true,Identificador estable del item de coordinacion,coord-20260702-001,low,false
 observed_at,datetime,true,Fecha y hora en que se observo o registro el item,2026-07-02T18:00:00Z,low,true
-community,string,true,Comunidad o ecosistema de coordinacion,Build 4 Venezuela,low,true
+community,string,true,Comunidad o ecosistema de coordinacion,Comunidad tecnica local,low,true
 source_group,string,false,Grupo canal o mesa donde aparece la senal,Grupo 1: Unificar Data,medium,conditional
 item_type,enum,true,Tipo de item observado,project,low,true
 function_type,enum,true,Funcion principal asociada,data_integration,low,true
