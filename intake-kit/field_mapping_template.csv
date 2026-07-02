@@ -1,0 +1,5 @@
+source_name,source_field,source_description,target_schema,target_field,transformation_needed,pii_risk,public_allowed,notes
+Ejemplo hoja acopio,item,Producto solicitado,necesidades_schema.csv,categoria,normalizar categoria,low,true,Convertir texto libre a categoria
+Ejemplo hoja acopio,zona,Sector general,necesidades_schema.csv,zona_agregada,limpiar geografia,low,true,No usar direccion exacta
+Ejemplo app transporte,estado_envio,Estado reportado,entregas_schema.csv,delivery_status,mapear enum,low,true,Prometida/en transito/recibida
+

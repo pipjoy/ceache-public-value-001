@@ -1,0 +1,23 @@
+field,type,required,description,example,pii_risk,public_allowed
+submission_id,string,true,Identificador unico del aporte,sub-20260702-001,low,false
+submitted_at,datetime,true,Fecha y hora de recepcion,2026-07-02T14:00:00Z,low,false
+actor_type,enum,true,Perfil de quien aporta contexto o datos,acopio,low,true
+actor_scope,enum,false,Tipo de actor segun relacion con la respuesta,comunitario,low,true
+geography_aggregated,string,true,Zona general no sensible,Caracas oeste,low,true
+context_text,text,true,Descripcion narrativa sin datos personales,Aumentaron solicitudes de agua desde ayer,medium,conditional
+signal_type,enum,true,Tipo principal de senal,necesidad,low,true
+need_or_offer_category,string,false,Categoria operativa,agua,low,true
+quantity,number,false,Cantidad aproximada,120,low,true
+unit,string,false,Unidad de medida,litros,low,true
+status,enum,false,Estado operativo,received,low,true
+date_observed,date,false,Fecha aproximada de observacion,2026-07-02,low,true
+source_type,enum,true,Tipo de fuente,formulario,low,true
+source_link,string,false,Link a hoja app API o fuente publica,https://example.org,medium,conditional
+file_received,boolean,false,Indica si se recibio archivo,false,medium,false
+permission_level,enum,true,Permiso declarado para uso,aggregate_public,low,true
+pii_risk_self_reported,enum,true,Riesgo PII declarado por quien aporta,none,medium,false
+review_status,enum,true,Estado de revision humana,received,low,false
+reviewer_notes,text,false,Notas internas de revision,requiere limpieza,medium,false
+mapped_schema,string,false,Schema destino si aplica,necesidades_schema.csv,low,false
+publication_allowed,boolean,true,Si puede publicarse luego de revision,false,medium,false
+

@@ -1,0 +1,4 @@
+submission_id,submitted_at,actor_type,actor_scope,geography_aggregated,context_text,signal_type,need_or_offer_category,quantity,unit,status,date_observed,source_type,source_link,file_received,permission_level,pii_risk_self_reported,review_status,reviewer_notes,mapped_schema,publication_allowed
+sub-20260702-001,2026-07-02T14:00:00Z,acopio,comunitario,Caracas oeste,Aumentaron solicitudes de agua y alimentos secos desde ayer,necesidad,agua,120,litros,received,2026-07-02,formulario,,false,aggregate_public,none,needs_review,,necesidades_schema.csv,false
+sub-20260702-002,2026-07-02T14:30:00Z,transportista,voluntario,Valencia norte,Hay disponibilidad para mover cajas pequenas durante la tarde,oferta,transporte,10,cajas,received,2026-07-02,formulario,,false,internal_only,none,needs_review,,entregas_schema.csv,false
+

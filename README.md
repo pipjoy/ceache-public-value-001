@@ -41,6 +41,7 @@ Este repositorio contiene:
 - schemas CSV para acopios, donaciones, necesidades, refugios, voluntarios, entregas y catalogo de fuentes;
 - matriz plataforma-funcion del Atlas 001;
 - propuesta de intake seguro para CSV, Excel, Google Sheet, formulario o API.
+- kit de intake para recibir contexto desde acopios, voluntarios, transportistas, organizaciones y equipos tecnicos.
 
 Las plataformas nombradas en `atlas/platform_function_matrix.csv` aparecen como fuentes observadas del ecosistema digital. Su inclusion no implica afiliacion, recomendacion, validacion de impacto ni aprobacion por parte de Ceache Lab.
 
@@ -86,6 +87,13 @@ atlas/
 
 downloads/
   ceache-paquete-valor-001.zip
+
+intake-kit/
+  questions-by-actor.md
+  intake_schema.csv
+  field_mapping_template.csv
+  sample_safe_submission.csv
+  review_workflow.md
 ```
 
 ## Como usarlo
@@ -97,6 +105,21 @@ Si eres una organizacion, comunidad o equipo tecnico:
 3. No compartas datos personales ni ubicaciones sensibles.
 4. Compara tus campos con los schemas.
 5. Contacta a Ceache Lab si quieres mapear una hoja, app, formulario o API a un formato seguro.
+
+## Siguiente valor: intake de contexto
+
+El directorio `intake-kit/` convierte la metodologia en una herramienta practica.
+
+Permite recibir:
+
+- relatos desde el terreno;
+- datos operativos minimos;
+- disponibilidad de transporte;
+- necesidades por zona agregada;
+- ofertas de donacion;
+- fuentes tecnicas como hojas, apps o APIs.
+
+El objetivo no es capturar todo. Es recibir senales seguras que puedan transformarse en evidencia revisable.
 
 ## Que no contiene
 
@@ -128,6 +151,7 @@ Este repositorio no contiene:
 - Documentos: `docs/`
 - Schemas tecnicos: `schemas/`
 - Matriz plataforma-funcion: `atlas/platform_function_matrix.csv`
+- Kit de intake: `intake-kit/`
 
 ## Estado
 

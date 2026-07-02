@@ -10,7 +10,8 @@
     "docs": 7,
     "schemas": 7,
     "atlas_files": 1,
-    "download_zip": 1
+    "download_zip": 1,
+    "intake_kit_files": 6
   },
   "not_included": [
     "personal names",
@@ -23,4 +24,3 @@
     "private chats"
   ]
 }
-
