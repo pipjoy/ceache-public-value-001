@@ -1,14 +1,14 @@
 {
   "name": "ceache-public-value-001",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "date": "2026-07-02",
   "author": "Johaina Chavez",
   "agency": "Ceache Lab",
   "status": "public_value_package",
   "principle": "Interoperar funciones, no personas",
   "contents": {
-    "docs": 8,
-    "schemas": 7,
+    "docs": 9,
+    "schemas": 9,
     "atlas_files": 1,
     "download_zip": 1,
     "intake_kit_files": 10

@@ -1,0 +1,22 @@
+field,type,required,description,example,pii_risk,public_allowed
+coordination_item_id,string,true,Identificador estable del item de coordinacion,coord-20260702-001,low,false
+observed_at,datetime,true,Fecha y hora en que se observo o registro el item,2026-07-02T18:00:00Z,low,true
+community,string,true,Comunidad o ecosistema de coordinacion,Build 4 Venezuela,low,true
+source_group,string,false,Grupo canal o mesa donde aparece la senal,Grupo 1: Unificar Data,medium,conditional
+item_type,enum,true,Tipo de item observado,project,low,true
+function_type,enum,true,Funcion principal asociada,data_integration,low,true
+topic,string,true,Tema operativo resumido sin datos personales,normalizacion de fuentes,low,true
+summary_safe,text,true,Resumen seguro sin chat crudo ni datos personales,Necesitan mapear fuentes y permisos para interoperar,medium,conditional
+related_project,string,false,Proyecto o sistema relacionado,VZLA_DEDUP,low,true
+related_source_id,string,false,Fuente relacionada si existe,source-vzla-dedup,low,true
+artifact_type,enum,false,Tipo de artefacto enlazado,repository,low,true
+artifact_url,string,false,URL publica o referencia segura,https://github.com/DataVenezuela/VZLA_DEDUP,medium,conditional
+decision_status,enum,false,Estado de decision u organizacion,needs_permission,low,true
+action_required,string,false,Siguiente accion segura,definir permiso y campos agregados,low,true
+owner_role,string,false,Rol responsable sin telefono privado,data lead,low,true
+schema_needed,string,false,Schema o capa necesaria,common_operational_signal,low,true
+pii_risk,enum,true,Riesgo de informacion personal,medium,medium,conditional
+sharing_permission,enum,true,Permiso de uso o intercambio,metadata_only,low,true
+publication_allowed,boolean,true,Si puede publicarse luego de revision,false,medium,false
+review_status,enum,true,Estado de revision humana,needs_review,low,false
+limitations,text,false,Limites conocidos del item,No se reviso historial completo del grupo,low,true

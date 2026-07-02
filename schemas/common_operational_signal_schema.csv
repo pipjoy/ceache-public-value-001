@@ -1,0 +1,28 @@
+field,type,required,description,example,pii_risk,public_allowed
+signal_id,string,true,Identificador estable de la senal operativa,sig-20260702-001,low,false
+event_id,string,false,Evento o crisis asociada,venezuela-earthquake-2026,low,true
+source_id,string,true,Fuente original o catalogada,source-acopiove-001,low,true
+source_record_id,string,false,ID original cuando sea seguro conservarlo,acopio-123,medium,conditional
+observed_at,datetime,false,Fecha de observacion del fenomeno,2026-07-02T12:00:00Z,low,true
+reported_at,datetime,false,Fecha en que fue reportado,2026-07-02T13:00:00Z,low,true
+updated_at,datetime,true,Fecha de ultima actualizacion conocida,2026-07-02T16:00:00Z,low,true
+function_type,enum,true,Funcion interoperable,necesidad,low,true
+category,string,true,Categoria principal,agua,low,true
+subcategory,string,false,Subcategoria operativa,agua_potable,low,true
+quantity,number,false,Cantidad o estimacion agregada,120,low,true
+unit,string,false,Unidad de medida,litros,low,true
+country,string,true,Pais,Venezuela,low,true
+admin1,string,false,Estado o region,Merida,low,true
+admin2,string,false,Municipio,Libertador,low,true
+admin3,string,false,Parroquia o localidad amplia,zona centro,medium,conditional
+location_precision,enum,true,Nivel de precision geografica,municipio,medium,conditional
+status,enum,true,Estado de la senal,reported,low,true
+verification_status,enum,true,Estado de verificacion,unverified,low,true
+confidence_tier,enum,false,Nivel de confianza de la fuente o metodo,B,low,true
+permission_status,enum,true,Permiso de uso,aggregate_public,low,true
+aggregation_level,enum,true,Nivel de agregacion,zona,low,true
+small_group_risk,enum,true,Riesgo por grupo pequeno,low,medium,conditional
+pii_risk,enum,true,Riesgo PII estimado,low,medium,conditional
+publication_allowed,boolean,true,Si puede publicarse luego de revision,true,medium,conditional
+safe_summary,text,false,Resumen seguro sin datos personales,Reporte agregado de necesidad de agua,medium,conditional
+limitations,text,false,Limites de interpretacion,No prueba entrega ni cobertura real,low,true

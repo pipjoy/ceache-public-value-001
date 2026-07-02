@@ -46,6 +46,7 @@ Este repositorio contiene:
 - checklist de calidad de datos;
 - plantilla tipo Google Sheet/CSV;
 - contrato API minimo para interoperabilidad segura.
+- capa comun de coordinacion para conectar grupos, apps, hojas, APIs y repositorios sin centralizar personas.
 
 Las plataformas nombradas en `atlas/platform_function_matrix.csv` aparecen como fuentes observadas del ecosistema digital. Su inclusion no implica afiliacion, recomendacion, validacion de impacto ni aprobacion por parte de Ceache Lab.
 
@@ -77,6 +78,7 @@ docs/
   data-intake-tool-v0.md
   declaracion-convocatoria-datos-seguros.md
   quick-start-compartir-datos.md
+  common-coordination-layer-v0.1.md
 
 schemas/
   acopios_schema.csv
@@ -86,6 +88,8 @@ schemas/
   voluntarios_schema.csv
   entregas_schema.csv
   source_catalog_schema.csv
+  common_coordination_item_schema.csv
+  common_operational_signal_schema.csv
 
 atlas/
   platform_function_matrix.csv
@@ -111,11 +115,12 @@ Si eres una organizacion, comunidad o equipo tecnico:
 1. Lee `docs/minimum-data-matrix.md`.
 2. Revisa el schema CSV que corresponde a tu tipo de dato.
 3. Lee `docs/quick-start-compartir-datos.md`.
-4. Usa `intake-kit/data-quality-checklist.md` antes de compartir.
-5. Copia `intake-kit/google_sheet_template.csv` como base de tu hoja.
-6. No compartas datos personales ni ubicaciones sensibles.
-7. Compara tus campos con los schemas.
-8. Contacta a Ceache Lab si quieres mapear una hoja, app, formulario o API a un formato seguro.
+4. Lee `docs/common-coordination-layer-v0.1.md` si necesitas conectar grupos, apps, hojas, APIs o repositorios.
+5. Usa `intake-kit/data-quality-checklist.md` antes de compartir.
+6. Copia `intake-kit/google_sheet_template.csv` como base de tu hoja.
+7. No compartas datos personales ni ubicaciones sensibles.
+8. Compara tus campos con los schemas.
+9. Contacta a Ceache Lab si quieres mapear una hoja, app, formulario o API a un formato seguro.
 
 ## Siguiente valor: intake de contexto
 
@@ -166,6 +171,7 @@ Este repositorio no contiene:
 - Matriz plataforma-funcion: `atlas/platform_function_matrix.csv`
 - Kit de intake: `intake-kit/`
 - Guia rapida: `docs/quick-start-compartir-datos.md`
+- Capa comun de coordinacion: `docs/common-coordination-layer-v0.1.md`
 - Checklist de calidad: `intake-kit/data-quality-checklist.md`
 - Plantilla tipo Google Sheet: `intake-kit/google_sheet_template.csv`
 - API contract minimo: `intake-kit/API_CONTRACT_MINIMO.md`
