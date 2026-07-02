@@ -42,6 +42,10 @@ Este repositorio contiene:
 - matriz plataforma-funcion del Atlas 001;
 - propuesta de intake seguro para CSV, Excel, Google Sheet, formulario o API.
 - kit de intake para recibir contexto desde acopios, voluntarios, transportistas, organizaciones y equipos tecnicos.
+- guia rapida para compartir datos seguros;
+- checklist de calidad de datos;
+- plantilla tipo Google Sheet/CSV;
+- contrato API minimo para interoperabilidad segura.
 
 Las plataformas nombradas en `atlas/platform_function_matrix.csv` aparecen como fuentes observadas del ecosistema digital. Su inclusion no implica afiliacion, recomendacion, validacion de impacto ni aprobacion por parte de Ceache Lab.
 
@@ -72,6 +76,7 @@ docs/
   schema-contract-v0.1.0.md
   data-intake-tool-v0.md
   declaracion-convocatoria-datos-seguros.md
+  quick-start-compartir-datos.md
 
 schemas/
   acopios_schema.csv
@@ -92,8 +97,11 @@ intake-kit/
   questions-by-actor.md
   intake_schema.csv
   field_mapping_template.csv
+  google_sheet_template.csv
   sample_safe_submission.csv
   review_workflow.md
+  data-quality-checklist.md
+  API_CONTRACT_MINIMO.md
 ```
 
 ## Como usarlo
@@ -102,9 +110,12 @@ Si eres una organizacion, comunidad o equipo tecnico:
 
 1. Lee `docs/minimum-data-matrix.md`.
 2. Revisa el schema CSV que corresponde a tu tipo de dato.
-3. No compartas datos personales ni ubicaciones sensibles.
-4. Compara tus campos con los schemas.
-5. Contacta a Ceache Lab si quieres mapear una hoja, app, formulario o API a un formato seguro.
+3. Lee `docs/quick-start-compartir-datos.md`.
+4. Usa `intake-kit/data-quality-checklist.md` antes de compartir.
+5. Copia `intake-kit/google_sheet_template.csv` como base de tu hoja.
+6. No compartas datos personales ni ubicaciones sensibles.
+7. Compara tus campos con los schemas.
+8. Contacta a Ceache Lab si quieres mapear una hoja, app, formulario o API a un formato seguro.
 
 ## Siguiente valor: intake de contexto
 
@@ -118,6 +129,8 @@ Permite recibir:
 - necesidades por zona agregada;
 - ofertas de donacion;
 - fuentes tecnicas como hojas, apps o APIs.
+- plantillas copiables para iniciar una hoja segura;
+- contratos minimos para conectar sistemas.
 
 El objetivo no es capturar todo. Es recibir senales seguras que puedan transformarse en evidencia revisable.
 
@@ -152,6 +165,10 @@ Este repositorio no contiene:
 - Schemas tecnicos: `schemas/`
 - Matriz plataforma-funcion: `atlas/platform_function_matrix.csv`
 - Kit de intake: `intake-kit/`
+- Guia rapida: `docs/quick-start-compartir-datos.md`
+- Checklist de calidad: `intake-kit/data-quality-checklist.md`
+- Plantilla tipo Google Sheet: `intake-kit/google_sheet_template.csv`
+- API contract minimo: `intake-kit/API_CONTRACT_MINIMO.md`
 
 ## Estado
 

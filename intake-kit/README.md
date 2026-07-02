@@ -19,8 +19,11 @@ Interoperar funciones, no personas.
 - `questions-by-actor.md`: preguntas para cada perfil.
 - `intake_schema.csv`: campos minimos para recibir una contribucion.
 - `field_mapping_template.csv`: plantilla para mapear columnas de una hoja/app al schema comun.
+- `google_sheet_template.csv`: plantilla base para copiar en Google Sheet, Excel o CSV.
 - `sample_safe_submission.csv`: ejemplo seguro, sin datos personales.
 - `review_workflow.md`: estados de revision y criterios de bloqueo.
+- `data-quality-checklist.md`: lista de verificacion antes de compartir datos.
+- `API_CONTRACT_MINIMO.md`: contrato minimo para conectar apps o sistemas.
 
 ## Para gente normal
 
@@ -39,6 +42,10 @@ No compartas nombres, cedulas, telefonos privados, direcciones exactas, salud in
 ## Para equipos tecnicos
 
 Usa `intake_schema.csv` para recibir submissions y `field_mapping_template.csv` para mapear fuentes externas.
+
+Si vas a empezar desde cero, usa `google_sheet_template.csv`.
+
+Si ya tienes una app o API, usa `API_CONTRACT_MINIMO.md`.
 
 Cada aporte debe tener:
 
@@ -64,4 +71,3 @@ archived
 ```
 
 Nada debe publicarse automaticamente.
-
