@@ -1,165 +1,93 @@
-# Muchas herramientas ya existen. El problema ahora es que puedan entenderse.
+# La proliferacion de herramientas no implica necesariamente mayor coordinacion
 
 Author: Johaina Chavez
 Agency: Ceache Lab
-Status: Public draft
+Status: Research Observation
 Date: 2026-07-02
 
 ## Pregunta
 
-Cuando una emergencia produce muchas aplicaciones, formularios, mapas, grupos y listas, la pregunta no es solamente:
+Por que un ecosistema con muchas herramientas puede seguir comportandose como un sistema fragmentado?
+
+## Fenomeno
+
+Despues de la crisis surgieron multiples herramientas para resolver problemas especificos de coordinacion: acopio, donaciones, necesidades, refugios, salud, voluntariado, danos, conectividad, informacion verificada, logistica y datos.
+
+La primera lectura podria ser que el problema principal es la falta de herramientas.
+
+Sin embargo, la evidencia disponible sugiere una pregunta distinta.
+
+## Hipotesis
 
 ```text
-Que herramienta falta?
+La cantidad de herramientas no aumenta necesariamente la capacidad de coordinacion.
 ```
 
-La pregunta mas importante es:
+## Observacion
 
-```text
-Que funciones de coordinacion ya estan cubiertas, por quien, con que datos y bajo que limites?
-```
+En la evidencia revisada aparecen muchas iniciativas cubriendo funciones similares o complementarias.
 
-## Que ocurrio
+Eso muestra actividad, especializacion y respuesta distribuida.
 
-Despues de la crisis, surgio un ecosistema digital amplio: apps de acopio, mapas de danos, directorios, sistemas de busqueda, formularios, bots, hojas de calculo, grupos de WhatsApp, repositorios tecnicos y bases parciales.
+Pero no demuestra, por si solo, coordinacion.
 
-Eso no significa desorden por si mismo. Significa que muchas personas intentaron resolver partes distintas de un mismo problema: coordinar ayuda bajo incertidumbre.
+Un ecosistema puede tener muchas herramientas y aun asi comportarse como un sistema fragmentado si las relaciones entre esas herramientas no son observables, estables o comparables.
 
-## Que cambio
+## Evidencia inicial
 
-El problema ya no puede describirse solo como falta de herramientas.
+La matriz funcional revisada contiene 168 fuentes, proyectos o plataformas. Una misma fuente puede cubrir mas de una funcion.
 
-La evidencia local muestra otro tipo de problema:
+| Funcion | Fuentes observadas | Riesgo PII alto |
+| --- | ---: | ---: |
+| acopio | 25 | 6 |
+| donaciones | 21 | 6 |
+| necesidades | 33 | 23 |
+| refugios | 51 | 30 |
+| salud | 49 | 27 |
+| voluntarios | 26 | 18 |
+| personas desaparecidas | 65 | 60 |
+| danos | 77 | 35 |
+| conectividad | 19 | 12 |
+| informacion verificada | 61 | 31 |
+| entregas / logistica | 75 | 33 |
+| datos / API | 82 | 44 |
 
-```text
-muchas piezas existen,
-pero no todas comparten la misma estructura,
-el mismo lenguaje,
-los mismos criterios de seguridad,
-ni la misma forma de conectarse.
-```
+Esta tabla no mide impacto.
 
-## Evidencia revisada
+Tampoco prueba que una necesidad este cubierta en la practica.
 
-Esta lectura parte de evidencia local ya organizada:
-
-| Evidencia | Que contiene |
-| --- | --- |
-| Matriz plataforma-funcion | 168 fuentes, proyectos o plataformas clasificadas por funcion. |
-| Inventario tecnico local | 43 repositorios revisados por viabilidad, preparacion, demo y severidad. |
-| Inventario WhatsApp | 23 grupos o canales funcionales de coordinacion. |
-| Mi Acopio / Acopio App | Tablas operativas existentes para acopio, necesidades, donaciones, inventario, voluntarios, transporte y trazabilidad. |
-| VZLA_DEDUP | Pipeline tecnico para normalizar, deduplicar y proteger datos sensibles. |
-| Auditoria API/datasets | Revision inicial de fuentes con senal de API o datos consultables. |
-| Observacion longitudinal | Sistema de observacion diaria, preguntas, patrones y auditorias. |
-
-## Cobertura observada
-
-La matriz funcional convierte cada fuente en una o varias funciones operativas. Una misma herramienta puede cubrir mas de una funcion.
-
-| Funcion | Fuentes observadas | Candidatas a interoperar | Senal de API publica | Riesgo PII alto |
-| --- | ---: | ---: | ---: | ---: |
-| acopio | 25 | 18 | 21 | 6 |
-| donaciones | 21 | 9 | 11 | 6 |
-| necesidades | 33 | 8 | 17 | 23 |
-| refugios | 51 | 19 | 31 | 30 |
-| salud | 49 | 18 | 28 | 27 |
-| voluntarios | 26 | 8 | 16 | 18 |
-| personas desaparecidas | 65 | 4 | 44 | 60 |
-| danos | 77 | 36 | 50 | 35 |
-| conectividad | 19 | 7 | 10 | 12 |
-| informacion verificada | 61 | 26 | 37 | 31 |
-| entregas / logistica | 75 | 37 | 49 | 33 |
-| datos / API | 82 | 38 | 53 | 44 |
-
-## Que significa
-
-La cantidad de herramientas no garantiza coordinacion.
-
-Para coordinar mejor no basta con publicar otra lista. Hace falta una capa comun que permita comparar funciones:
-
-- que necesidad se reporta;
-- en que zona agregada ocurre;
-- que estado tiene;
-- que fuente la reporta;
-- cuando fue actualizada;
-- que nivel de confianza tiene;
-- que datos pueden compartirse;
-- que datos no deben publicarse.
-
-Esa capa comun no reemplaza a las apps existentes. Ayuda a que puedan entenderse.
+Solo muestra que el ecosistema digital observado ya contiene multiples herramientas por funcion.
 
 ## Que sabemos
 
-- Existen muchas soluciones, no una sola.
-- Varias funciones ya estan parcialmente cubiertas.
-- Hay repeticion fuerte en danos, logistica, informacion verificada, personas desaparecidas y datos/API.
-- Las funciones mas sensibles no son necesariamente las mas conectables.
-- Personas desaparecidas, salud, refugios, menores, ubicaciones exactas y contactos privados requieren proteccion especial.
+- Hay mas de una herramienta, fuente o proyecto para varias funciones criticas.
+- La repeticion funcional es especialmente visible en danos, logistica, informacion verificada, personas desaparecidas y datos/API.
+- Las funciones con mas actividad digital tambien pueden ser las de mayor riesgo de datos sensibles.
+- La existencia de muchas herramientas no permite inferir coordinacion efectiva.
 
 ## Que creemos
 
-- El cuello de botella principal no es crear una app mas.
-- El cuello de botella es ordenar datos, funciones, permisos y responsabilidades.
-- La mejor contribucion inicial es producir una matriz comun, descargable y revisable.
-- Mi Acopio puede servir como nodo demostrador para datos operativos seguros, no como base central de todo el ecosistema.
+- El fenomeno relevante no es solo la aparicion de herramientas, sino la relacion entre ellas.
+- La fragmentacion puede persistir aunque haya muchas soluciones parciales.
+- Para entender coordinacion hace falta observar relaciones, dependencias, actualizaciones, permisos y cambios en el tiempo.
 
 ## Que todavia no sabemos
 
-- Que plataformas siguen activas con datos actualizados.
-- Que responsables quieren validar su informacion.
-- Que fuentes tienen permiso explicito para compartir datos.
-- Que APIs son estables y aptas para integracion.
+- Que herramientas siguen activas y con datos actualizados.
+- Cuales se comunican entre si.
+- Que informacion viaja entre herramientas, grupos o instituciones.
 - Que duplicaciones ayudan y cuales confunden.
-- Que campos deben corregirse en inventarios ya existentes.
+- Si la interoperabilidad explica mejor la coordinacion que el numero de aplicaciones.
 
-## Que datos si se pueden compartir
-
-Datos operativos y no personales, por ejemplo:
-
-- tipo de necesidad;
-- categoria de recurso;
-- zona agregada;
-- estado operativo;
-- fecha de actualizacion;
-- fuente;
-- canal institucional;
-- nivel de verificacion;
-- permiso o licencia;
-- responsable institucional o tecnico.
-
-## Que datos no se deben enviar ni publicar
-
-- nombres de personas vulnerables;
-- cedulas;
-- telefonos privados;
-- ubicaciones exactas sensibles;
-- datos de salud individual;
-- informacion de menores;
-- fotos identificables;
-- reportes nominales de desaparecidos;
-- chats completos de WhatsApp.
-
-## Siguiente paso
-
-La siguiente entrega no debe pedir datos primero.
-
-Debe abrir una validacion:
+## Nueva pregunta
 
 ```text
-Si tienes una app, Excel, formulario, API o base operativa,
-ayudanos a validar que funcion cubre,
-que campos usa,
-que datos puede compartir de forma segura
-y que informacion no debe exponerse.
+Que impide que un ecosistema con muchas herramientas funcione como un sistema coordinado?
 ```
 
-Primero se muestra el mapa. Despues se pide colaboracion.
+Responder esa pregunta requiere observar como evolucionan las relaciones entre herramientas en el tiempo, no solamente contar cuantas existen hoy.
 
-## Archivos descargables
+## Anexo tecnico
 
-- `ecosystem_function_public_table_2026-07-02.csv`: tabla publica por funcion y fuente.
-- `common_coordination_item_schema.csv`: esquema minimo para describir una pieza de coordinacion.
-- `common_operational_signal_schema.csv`: esquema minimo para reportar una senal operativa.
-- `minimum-data-matrix.md`: guia de datos minimos por tipo de operacion.
-- `DATA_SAFETY.md`: reglas de seguridad y datos que no deben compartirse.
+Los archivos descargables, schemas y tablas completas quedan como anexo para auditoria, reproduccion y trabajo tecnico. No son el argumento central de esta observacion.
+

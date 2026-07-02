@@ -1,19 +1,19 @@
 # Ceache Public Value Package 001
 
-**Mapa del ecosistema digital de ayuda**  
+**Research Observation 001**  
 Johaina Chavez, Data Scientist  
 Ceache Lab  
 Fecha: 2026-07-02
 
-Este repositorio publica una entrega abierta basada en evidencia local organizada.
+Este repositorio acompana una observacion de investigacion basada en evidencia local organizada.
 
 La idea central es:
 
-> Muchas herramientas ya existen. El problema ahora es que puedan entenderse sin exponer informacion sensible.
+> La proliferacion de herramientas no implica necesariamente mayor coordinacion.
 
 No es un ranking de apps. No es una base central de personas. No reemplaza proyectos existentes.
 
-Es un paquete para ordenar funciones, datos minimos, riesgos y posibilidades de interoperabilidad.
+El cuerpo principal formula el fenomeno. Los archivos tecnicos quedan como anexo para auditoria, reproduccion y trabajo de datos.
 
 ## Para cualquier persona
 
@@ -21,14 +21,13 @@ Durante una emergencia aparecen aplicaciones, formularios, mapas, hojas de calcu
 
 Eso puede parecer desorden. Pero tambien muestra algo importante: muchas personas estan intentando resolver partes distintas de un mismo sistema.
 
-Este paquete ayuda a responder:
+La observacion ayuda a preguntar:
 
-- Que funciones ya estan cubiertas?
-- Que datos se pueden comparar?
-- Que datos no se deben compartir?
-- Que herramientas podrian conectarse?
-- Donde hay duplicacion util?
-- Donde hay riesgo de exponer personas?
+- Por que muchas herramientas no necesariamente producen coordinacion?
+- Que relaciones entre herramientas son observables?
+- Que duplicaciones son utiles y cuales confunden?
+- Que riesgos aparecen cuando las funciones tocan datos sensibles?
+- La interoperabilidad explica mejor la coordinacion que el numero de aplicaciones?
 
 ## Para equipos tecnicos
 
@@ -70,8 +69,6 @@ Esta version parte de evidencia local ya organizada:
 - 584 relaciones funcion-fuente en `atlas/ecosystem_function_public_table_2026-07-02.csv`.
 - 43 repositorios analizados desde inventario tecnico local.
 - 23 grupos o canales funcionales de coordinacion inventariados.
-- tablas operativas existentes para Mi Acopio / Acopio App.
-- un pipeline tecnico externo para deduplicacion y proteccion PII en VZLA_DEDUP.
 - un sistema longitudinal de observacion diaria.
 
 ## Entregables principales
@@ -165,13 +162,12 @@ Este repositorio no contiene y no solicita:
 2. Separamos herramientas existentes de vacios reales.
 3. Creamos una tabla funcion-fuente descargable.
 4. Marcamos riesgos PII por funcion.
-5. Identificamos candidatas a interoperar.
-6. Definimos schemas y datos minimos para intercambio seguro.
-7. Documentamos limites: lo que sabemos, lo que creemos y lo que todavia no sabemos.
+5. Documentamos limites: lo que sabemos, lo que creemos y lo que todavia no sabemos.
+6. Dejamos schemas y datos minimos como anexo tecnico, no como argumento central.
 
 ## Estado
 
-Version: `v0.1.3`  
+Version: `v0.1.4`  
 Estado: public value package, evidencia preliminar  
 Licencia: ver `LICENSE.md`  
 Contacto: ceachelab@gmail.com

@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.4 - 2026-07-02
+
+Reescribe el resultado principal como observacion de investigacion.
+
+La publicacion deja de presentar una solucion tecnica en el cuerpo principal y se concentra en una sola hipotesis:
+
+```text
+La proliferacion de herramientas no implica necesariamente mayor coordinacion.
+```
+
+Los schemas, tablas descargables y materiales de interoperabilidad quedan como anexo tecnico.
+
 ## v0.1.3 - 2026-07-02
 
 Reordena el paquete alrededor del mapa del ecosistema digital.
